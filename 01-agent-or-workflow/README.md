@@ -98,7 +98,7 @@ Three questions place any step, in this order: does it change a system of record
 
 ![A decision tree placing one step as model-led, written in advance, or a person's work.](assets/step-tree.png)
 
-*My own sort for one step of an assistant. From my AI Agentic Reference Architecture, version 1.11.0, draft.*
+*My own sort for one step of an assistant. From my AI Agentic Reference Architecture.*
 
 If the work changes a record but its steps cannot be written down, I do not hand it to an agent: a person does it until the steps can be written.
 
@@ -123,7 +123,7 @@ I would change my mind if an enterprise measured, on its own tasks and over repe
 
 ![One assistant drawn as a graph of steps: the model chooses the reads, written steps change records, and the model can only ask.](assets/picture.png)
 
-*From my AI Agentic Reference Architecture, version 1.11.0, draft.*
+*From my AI Agentic Reference Architecture.*
 
 ## Behind this answer
 
@@ -139,7 +139,7 @@ How to read the view below:
 
 ![The ArchiMate view "Agent or workflow"](assets/archimate.png)
 
-*From the ArchiMate model of my AI Agentic Reference Architecture, version 1.11.0, draft. View: "Agent or workflow".*
+*From the ArchiMate model of my AI Agentic Reference Architecture. View: "Agent or workflow".*
 
 - **TOGAF phase:** principles belong to the preliminary phase, where the rules for all later work are set. The building blocks belong to the application phase, where the software pieces are chosen.
 - **Tested or guidance:** "Lowest sufficient complexity" is realised (the model's word for supported) by two requirements, on repeated-run evaluation and on run budgets. "Agents for interaction, workflows for records" has nothing supporting it, so it is guidance.
@@ -194,8 +194,8 @@ One question for your chief operating officer: what would one wrong change to a 
 | Workflows have predetermined code paths; agents define their own processes and tool use; the same framework builds both from steps joined by paths; a graph can pause at a step and wait for a person's input | Product documentation | LangChain, LangGraph documentation, "Workflows and agents" and "Interrupts", https://docs.langchain.com/oss/python/langgraph/workflows-agents and https://docs.langchain.com/oss/python/langgraph/interrupts | No date shown |
 | Some customers use "agent" for systems that follow predefined workflows; all are called agentic systems, and the difference between a workflow and an agent is kept | Vendor guidance | Anthropic, "Building effective agents", same page as above | Published 19 Dec 2024 |
 | Workflows that connect agents and functions through explicit execution paths | Product documentation | Microsoft Learn, "Microsoft Agent Framework Overview", same page as above | Last updated 28 Oct 2026 |
-| A step that changes a record is written by people however the agent is built; judge each step, not the product | My position | My AI Agentic Reference Architecture, version 1.11.0, draft | Not applicable |
-| Agents for conversation and sorting, workflows wherever a record changes | My position | My AI Agentic Reference Architecture, version 1.11.0, draft | Not applicable |
+| A step that changes a record is written by people however the agent is built; judge each step, not the product | My position | My AI Agentic Reference Architecture | Not applicable |
+| Agents for conversation and sorting, workflows wherever a record changes | My position | My AI Agentic Reference Architecture | Not applicable |
 
 Last verified: 2026-11-23.
 
