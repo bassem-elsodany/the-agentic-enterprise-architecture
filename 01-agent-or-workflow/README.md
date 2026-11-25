@@ -66,11 +66,9 @@ None of the guidance I read draws the line at the question I think comes first: 
 - In the 2024 paper, the best model tested solved about 61 percent of the retail tasks on one try.
 - It solved about 25 percent or fewer when it had to get the same task right on eight runs in a row.
 
-That is a reason for the rule, not a test of it.
-
 ## Most agents already have a workflow inside
 
-Few agents are one or the other. A team that built on an agent framework will call its assistant a workflow, and be right to call it an agent too.
+Few agents are one or the other: a team on an agent framework can call its assistant a workflow, and an agent.
 
 - **Anthropic** notes that some customers use "agent" for systems that follow predefined workflows. It calls all of them agentic systems and keeps the difference.
 - **LangGraph**, an agent framework, builds both from steps joined by paths. Its documentation says a workflow has predetermined paths and an agent defines its own, and a graph can pause at a step for a person's approval.
@@ -88,17 +86,17 @@ No source I found says where such a step must sit. That is my position.
 
 A doctor the assistant suggests to Anna can be the wrong match, and what makes that safe is that Anna reads the answer and chooses.
 
-Updating a medication list is different. It changes the system of record every clinician will trust, as rescheduling changes the booking system and registering a patient creates a record every later visit relies on. You want the same steps in the same order every time, written down, tested and signed off by the people who own those systems.
+Updating a medication list is different. It changes the system of record every clinician will trust, as rescheduling changes the booking system. You want the same steps in the same order every time, written down, tested and signed off by the people who own those systems.
 
 The variation that makes an agent useful at matching symptoms to doctors is the thing you cannot afford on a medication list. An agent right on average is not right every time.
 
 ## A quick sort
 
-Three questions place any step, in this order: does it change a system of record or send something out, can its steps be written down in advance, and if it is wrong, who sees it and when? A suggestion a person reads first can afford a looser path.
+Three questions place any step, in this order: does it change a system of record or send something out, can its steps be written down in advance, and if it is wrong, who sees it and when?
 
-![A scale from the model choosing the path to a person doing the work, with three places a step can sit.](assets/step-tree.png)
-
-*My own sort for one step of an assistant. From my AI Agentic Reference Architecture.*
+- **Reads only, and a person sees the result first.** The model may choose the path. In the health network: finding Anna a doctor by symptom. She reads the list and chooses.
+- **Reads only, but nobody sees the result first.** The path is fixed in advance. In the health network: a note Anna leaves on her appointment, read later by Dr Rao's assistant.
+- **Changes a record or sends something out, and the steps can be written down.** People write, test and sign them off. The model can only ask. In the health network: moving Anna's appointment, then e-mailing her the confirmation.
 
 If the work changes a record but its steps cannot be written down, I do not hand it to an agent: a person does it until the steps can be written.
 
@@ -113,7 +111,7 @@ Within either half, use the lowest sufficient complexity: ask a model once befor
 
 I side with Microsoft and Anthropic against starting from an agent.
 
-Agents are not shut out of the change. The assistant can listen to Anna, work out that she wants to move her appointment and ask for it. The workflow makes the change.
+The assistant can listen to Anna, work out that she wants to move her appointment and ask for it. The workflow makes the change.
 
 That holds inside a framework too: a step that changes a record is a written step, however the agent is built. Who decides what, between the two, is the next decision.
 
@@ -121,7 +119,7 @@ I rejected an agent first, everywhere: it demos well, but it varies most between
 
 I would change my mind if an enterprise measured, on its own tasks and over repeated runs, that an agent completes a record change every time, and a person still approves each change.
 
-![One assistant drawn as a graph of steps: the model chooses the reads, written steps change records, and the model can only ask.](assets/picture.png)
+![One assistant drawn as a graph of steps, with the model choosing reads and written steps changing records.](assets/picture.png)
 
 *From my AI Agentic Reference Architecture.*
 
@@ -148,7 +146,7 @@ How to read the view below:
 ## What this changes for you
 
 - **Integration architect.** Your flows stay as the way records change. The new work is letting an agent ask for them, and choosing which.
-- **Security architect.** A fixed path gives you a place to put controls. The agent still writes the request, such as which medication to add to a list, so its guess can reach the workflow. The workflow limits where it can land; the next decision covers who checks it.
+- **Security architect.** A fixed path gives you a place to put controls. The agent still writes the request, so its guess can reach the workflow. The workflow limits where it can land; the next decision covers who checks it.
 - **Data architect.** An agent that reads data with an owner and access rules is a smaller risk than one that writes it. The data decisions later start from reading.
 
 ## Why the business should care
