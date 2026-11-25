@@ -96,7 +96,7 @@ The variation that makes an agent useful at matching symptoms to doctors is the 
 
 Three questions place any step, in this order: does it change a system of record or send something out, can its steps be written down in advance, and if it is wrong, who sees it and when? A suggestion a person reads first can afford a looser path.
 
-![A decision tree placing one step as model-led, written in advance, or a person's work.](assets/step-tree.png)
+![A scale from the model choosing the path to a person doing the work, with three places a step can sit.](assets/step-tree.png)
 
 *My own sort for one step of an assistant. From my AI Agentic Reference Architecture.*
 
