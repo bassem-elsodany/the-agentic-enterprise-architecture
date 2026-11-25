@@ -2,7 +2,7 @@
 
 Articles on enterprise agentic architecture, with every image at full size.
 
-Each folder holds one article as a page (`README.md`) and its images in `assets/`. Open an image on this page and click it to see it at full size. SVG files scale without losing detail.
+Each folder holds one article as a page (`README.md`) and its images in `assets/`, at full size: a PNG for each image and, where there is one, an SVG that scales without losing detail.
 
 ## Articles
 
