@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="860" viewBox="0 0 1600 860" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+<title>Agent or workflow? Ask what the work touches</title>
+<defs><marker id="m-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#334155"/></marker><marker id="m-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0F766E"/></marker></defs>
+<rect width="1600" height="860" fill="#FFFFFF"/>
+<text x="24" y="46" font-size="30" font-weight="bold" font-style="normal" fill="#0F172A" text-anchor="start" >Agent or workflow? Ask what the work touches</text>
+<text x="24" y="74" font-size="14" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >Question: in an assistant built as a graph of steps, which step may change a record, and who chose it?</text>
+<rect x="24" y="110" width="1552" height="490" rx="10" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.8"/>
+<text x="48" y="142" font-size="17" font-weight="bold" font-style="normal" fill="#0F172A" text-anchor="start" >One assistant, built as a graph of steps</text>
+<text x="48" y="164" font-size="12.5" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >It does not matter which framework draws the graph. Look at each step.</text>
+<rect x="1196" y="128" width="160" height="24" rx="12" fill="#1E293B"/>
+<text x="1276.0" y="144" font-size="10" font-weight="bold" font-style="normal" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.6">THE MODEL CHOOSES</text>
+<rect x="1366" y="128" width="190" height="24" rx="12" fill="#0F766E"/>
+<text x="1461.0" y="144" font-size="10" font-weight="bold" font-style="normal" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.6">THE STEPS ARE WRITTEN</text>
+<rect x="56" y="250" width="290" height="120" rx="10" fill="#F1F5F9" stroke="#1E293B" stroke-width="2.6"/>
+<text x="72" y="280" font-size="14" font-weight="bold" font-style="normal" fill="#0F172A" text-anchor="start" >Understand the request</text>
+<text x="72" y="302" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >The model reads what Anna asked</text>
+<text x="72" y="320" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >and picks the next step.</text>
+<text x="72" y="346" font-size="11.5" font-weight="normal" font-style="italic" fill="#475569" text-anchor="start" >Not fixed: it can differ each run.</text>
+<text x="420" y="182" font-size="12.5" font-weight="bold" font-style="normal" fill="#1E293B" text-anchor="start" >Reads and answers: the model may choose the path</text>
+<rect x="420" y="190" width="360" height="100" rx="10" fill="#F1F5F9" stroke="#1E293B" stroke-width="2.2"/>
+<text x="436" y="218" font-size="14" font-weight="bold" font-style="normal" fill="#0F172A" text-anchor="start" >Find a doctor or clinic</text>
+<text x="436" y="240" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >A read-only step. The model chooses</text>
+<text x="436" y="258" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >when to call it, and with what.</text>
+<rect x="840" y="190" width="360" height="100" rx="10" fill="#FFFFFF" stroke="#64748B" stroke-width="1.5"/>
+<text x="856" y="218" font-size="14" font-weight="bold" font-style="normal" fill="#0F172A" text-anchor="start" >A reply Anna reads</text>
+<text x="856" y="240" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >A short list of doctors. She sees it</text>
+<text x="856" y="258" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >before anything is changed.</text>
+<path d="M346,290 L383,290 L383,240 L418,240" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#m-ink)"/>
+<path d="M780,240 L838,240" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#m-ink)"/>
+<path d="M400 322 L1552 322" stroke="#94A3B8" stroke-width="1.4" stroke-dasharray="6 5"/>
+<text x="420" y="348" font-size="12.5" font-weight="bold" font-style="normal" fill="#0F766E" text-anchor="start" >Changes a record: steps people wrote, tested and signed off</text>
+<rect x="420" y="356" width="300" height="116" rx="10" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.9"/>
+<circle cx="444" cy="384" r="13" fill="#0F766E"/>
+<text x="444" y="389" font-size="13" font-weight="bold" font-style="normal" fill="#FFFFFF" text-anchor="middle" >1</text>
+<text x="466" y="389" font-size="14" font-weight="bold" font-style="normal" fill="#0F172A" text-anchor="start" >Check the request</text>
+<text x="436" y="424" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >Is she known? Is the slot free?</text>
+<text x="436" y="442" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >Does Anna confirm the change?</text>
+<rect x="780" y="356" width="300" height="116" rx="10" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.9"/>
+<circle cx="804" cy="384" r="13" fill="#0F766E"/>
+<text x="804" y="389" font-size="13" font-weight="bold" font-style="normal" fill="#FFFFFF" text-anchor="middle" >2</text>
+<text x="826" y="389" font-size="14" font-weight="bold" font-style="normal" fill="#0F172A" text-anchor="start" >Move the appointment</text>
+<text x="796" y="424" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >Changes the booking system.</text>
+<text x="796" y="442" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >Runs only after the check.</text>
+<rect x="1140" y="356" width="300" height="116" rx="10" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.9"/>
+<circle cx="1164" cy="384" r="13" fill="#0F766E"/>
+<text x="1164" y="389" font-size="13" font-weight="bold" font-style="normal" fill="#FFFFFF" text-anchor="middle" >3</text>
+<text x="1186" y="389" font-size="14" font-weight="bold" font-style="normal" fill="#0F172A" text-anchor="start" >Send the confirmation</text>
+<text x="1156" y="424" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >The messages system e-mails</text>
+<text x="1156" y="442" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >the patient. It cannot be unsent.</text>
+<path d="M201,370 L201,414 L418,414" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#m-ink)"/>
+<rect x="236" y="402" width="124" height="24" rx="12" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+<text x="298" y="418" font-size="11" font-weight="bold" font-style="normal" fill="#334155" text-anchor="middle" >asks for a change</text>
+<path d="M720,414 L778,414" fill="none" stroke="#0F766E" stroke-width="2" marker-end="url(#m-teal)"/>
+<path d="M1080,414 L1138,414" fill="none" stroke="#0F766E" stroke-width="2" marker-end="url(#m-teal)"/>
+<rect x="780" y="512" width="300" height="60" rx="10" fill="#F0FDFA" stroke="#0F766E" stroke-width="1.4"/>
+<text x="796" y="536" font-size="13" font-weight="bold" font-style="normal" fill="#0F172A" text-anchor="start" >Booking system</text>
+<text x="796" y="556" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >Holds the official appointments.</text>
+<path d="M930,472 L930,510" fill="none" stroke="#0F766E" stroke-width="2" marker-end="url(#m-teal)"/>
+<rect x="1140" y="512" width="300" height="60" rx="10" fill="#F0FDFA" stroke="#0F766E" stroke-width="1.4"/>
+<text x="1156" y="536" font-size="13" font-weight="bold" font-style="normal" fill="#0F172A" text-anchor="start" >Messages system</text>
+<text x="1156" y="556" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >Sends the e-mail.</text>
+<path d="M1290,472 L1290,510" fill="none" stroke="#0F766E" stroke-width="2" marker-end="url(#m-teal)"/>
+<text x="48" y="560" font-size="12" font-weight="normal" font-style="italic" fill="#475569" text-anchor="start" >Each step that changes a record</text>
+<text x="48" y="578" font-size="12" font-weight="normal" font-style="italic" fill="#475569" text-anchor="start" >has an owner who signed it off.</text>
+<rect x="24" y="620" width="1552" height="68" rx="10" fill="#EFF6FF" stroke="#1D4ED8" stroke-width="1.5"/>
+<text x="48" y="645" font-size="12" font-weight="bold" font-style="normal" fill="#1D4ED8" text-anchor="start" >In the health network</text>
+<text x="48" y="668" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >Anna&#x27;s assistant can be built on any framework. Finding her a doctor can be the model&#x27;s choice. Moving her appointment is a written step, reached only after the check and her confirmation.</text>
+<rect x="24" y="706" width="1552" height="132" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+<text x="48" y="734" font-size="15" font-weight="bold" font-style="normal" fill="#0F172A" text-anchor="start" >The rule</text>
+<text x="48" y="758" font-size="13" font-weight="normal" font-style="normal" fill="#0F172A" text-anchor="start" >Judge each step, not the product.</text>
+<text x="48" y="778" font-size="13" font-weight="normal" font-style="normal" fill="#0F172A" text-anchor="start" >Ask who chose the step, a person or the model, and whether it can change a system of record.</text>
+<text x="48" y="798" font-size="13" font-weight="normal" font-style="normal" fill="#0F172A" text-anchor="start" >A step that changes a record is written, tested and signed off, however the agent is built.</text>
+<text x="1000" y="734" font-size="13" font-weight="bold" font-style="normal" fill="#0F172A" text-anchor="start" >How to read this view</text>
+<rect x="1000" y="746" width="34" height="18" rx="4" fill="#F1F5F9" stroke="#1E293B" stroke-width="2"/>
+<text x="1046" y="760" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >A step the model chooses</text>
+<rect x="1000" y="772" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#0F766E" stroke-width="2"/>
+<text x="1046" y="786" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >A step written in advance</text>
+<rect x="1000" y="798" width="40" height="18" rx="9" fill="#FFFFFF" stroke="#334155" stroke-width="1.2"/>
+<text x="1052" y="812" font-size="12" font-weight="normal" font-style="normal" fill="#475569" text-anchor="start" >The model asks, a written step acts</text>
+</svg>
