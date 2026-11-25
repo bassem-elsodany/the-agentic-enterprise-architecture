@@ -1,4 +1,4 @@
-# The agentic enterprise
+# The agentic enterprise architecture
 
 Articles on enterprise agentic architecture, with every image at full size.
 
