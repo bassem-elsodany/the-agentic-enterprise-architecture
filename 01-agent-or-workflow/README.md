@@ -6,6 +6,21 @@
 
 *Vendors tell you to start small, and to keep fixed work out of agents. None I read draws the line at whether the work changes an official record, such as an appointment or a patient's record. Here is the question that does.*
 
+**In this article**
+
+- [First, three words](#first-three-words)
+- [What the vendors say, and what they leave out](#what-the-vendors-say-and-what-they-leave-out)
+- [Most agents already have a workflow inside](#most-agents-already-have-a-workflow-inside)
+- [Why a record changes the answer](#why-a-record-changes-the-answer)
+- [A quick sort](#a-quick-sort)
+- [My position](#my-position)
+- [Behind this answer](#behind-this-answer)
+- [What this changes for you](#what-this-changes-for-you)
+- [Why the business should care](#why-the-business-should-care)
+- [Four questions for your board](#four-questions-for-your-board)
+- [What no source says](#what-no-source-says)
+- [Receipts](#receipts)
+
 A chain of clinics, which I call the health network, has an AI pilot that works. What stands between it and production? This is the first of the decisions that answer that.
 
 The assistant does many jobs. Each role has an assistant of its own, over several systems, and all of it is personal data:
