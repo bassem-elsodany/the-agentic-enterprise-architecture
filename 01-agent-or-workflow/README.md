@@ -44,7 +44,7 @@ An **agent** is software where an AI model decides the next step. A **workflow**
 
 If you run integration, you already own workflows: every flow on your platform is one, and a flow can still ask a model for help inside a step.
 
-What is new is the agent. Nobody wrote its path down, and the model chooses, one step at a time, what to call next.
+What is new is the agent: nobody wrote its path down, and the model chooses what to call next.
 
 ## What the vendors say, and what they leave out
 
@@ -59,7 +59,7 @@ They agree that you grow slowly. They differ on whether the first step can be no
 - Microsoft says that if you can write a function to handle the task, do that instead of using an AI agent.
 - Anthropic says workflows offer predictability for well-defined tasks.
 
-None of the guidance I read draws the line at the question I think comes first: does this work change a system of record? That line is my position. What I found is a reason for it, on consistency.
+None of the guidance I read draws the line at the question I think comes first: does this work change a system of record? That line is my position. The best reason I found is consistency.
 
 **Consistency.** The best-known test of agents on customer-service tasks, tau-bench, asks not only whether an agent succeeds once but whether it succeeds every time on the same task.
 
@@ -73,6 +73,7 @@ Few agents are one or the other: a team on an agent framework can call its assis
 - **Anthropic** notes that some customers use "agent" for systems that follow predefined workflows. It calls all of them agentic systems and keeps the difference.
 - **LangGraph**, an agent framework, builds both from steps joined by paths. Its documentation says a workflow has predetermined paths and an agent defines its own, and a graph can pause at a step for a person's approval.
 - **Microsoft** describes workflows that connect agents and functions through explicit paths.
+- **Salesforce** built its own graph for Agentforce: steps and transitions, some passing only after a check succeeds, with the model reasoning inside a step.
 
 So judge each step, not the product. Ask of every step who chose it, a person who wrote the path or the model at run time, and whether it can change a system of record.
 
@@ -113,7 +114,7 @@ I side with Microsoft and Anthropic against starting from an agent.
 
 The assistant can listen to Anna, work out that she wants to move her appointment and ask for it. The workflow makes the change.
 
-That holds inside a framework too: a step that changes a record is a written step, however the agent is built. Who decides what, between the two, is the next decision.
+That holds inside a framework too: a step that changes a record is a written step, however the agent is built. The next decision covers who decides what.
 
 I rejected an agent first, everywhere: it demos well, but it varies most between runs and gives a model's judgment a path to your records.
 
@@ -160,7 +161,7 @@ Each step an agent decides is a paid call to the model. In Anthropic's own data 
 
 That is one vendor's figure about one system. Fixed steps cost less to run and can be audited but cost more to build, which is my reasoning, not a measured figure.
 
-A demo in which the assistant does everything is not evidence that it should. When a team says its assistant is "just a workflow", ask which steps change a record or send something out, and whether people wrote them down beforehand.
+When a team says its assistant is "just a workflow", ask which steps change a record or send something out, and whether people wrote them down beforehand.
 
 One question for your chief operating officer: what would one wrong change to a patient's record cost us, and how many would we accept?
 
@@ -192,6 +193,7 @@ One question for your chief operating officer: what would one wrong change to a 
 | Workflows have predetermined code paths; agents define their own processes and tool use; the same framework builds both from steps joined by paths; a graph can pause at a step and wait for a person's input | Product documentation | LangChain, LangGraph documentation, "Workflows and agents" and "Interrupts", https://docs.langchain.com/oss/python/langgraph/workflows-agents and https://docs.langchain.com/oss/python/langgraph/interrupts | No date shown |
 | Some customers use "agent" for systems that follow predefined workflows; all are called agentic systems, and the difference between a workflow and an agent is kept | Vendor guidance | Anthropic, "Building effective agents", same page as above | Published 19 Dec 2024 |
 | Workflows that connect agents and functions through explicit execution paths | Product documentation | Microsoft Learn, "Microsoft Agent Framework Overview", same page as above | Last updated 28 Oct 2026 |
+| Agentforce models a business process as a graph of steps and transitions; some transitions are guarded by checks that must pass; each step is a focused reasoning agent | Vendor guidance | Salesforce Engineering, "Building Enterprise AI Agents That Are Both Autonomous and Reliable", https://engineering.salesforce.com/?p=8509, and "Agentforce's Agent Graph: Toward Guided Determinism with Hybrid Reasoning", https://engineering.salesforce.com/?p=7847 (both read in full) | Posted 6 Jul and 20 Oct; the year is not shown on either page |
 | A step that changes a record is written by people however the agent is built; judge each step, not the product | My position | My AI Agentic Reference Architecture | Not applicable |
 | Agents for conversation and sorting, workflows wherever a record changes | My position | My AI Agentic Reference Architecture | Not applicable |
 
