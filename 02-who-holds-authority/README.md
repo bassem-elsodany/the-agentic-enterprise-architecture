@@ -180,6 +180,4 @@ One question for your head of risk: for each action an assistant may ask for, wh
 | Risk classification must not rely on a model exposed to the same untrusted content; rule-based checks, not the model, are the authoritative signal | Vendor guidance | AWS Well-Architected Framework, Agentic AI Lens, "Human-in-the-loop for critical decisions" | No date shown |
 | The model plans and never holds authority; agents hold no system credentials; approvals bound to one proposal, single use, expiring, by a named person who is not the requester; consent kept apart from approval; injected instructions assumed to succeed sometimes | My position | My AI Agentic Reference Architecture | Not applicable |
 
-Last verified: 2026-11-26.
-
 **Next: how much may an agent do on its own?**
