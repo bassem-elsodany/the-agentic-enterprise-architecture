@@ -145,3 +145,4 @@ If you cannot answer them today, the articles that follow are for you.
 Each article is a folder with its page and its images at full size.
 
 - [Agent or workflow? Ask what the work touches](01-agent-or-workflow/README.md)
+- [The model proposes. Who decides?](02-who-holds-authority/README.md)
