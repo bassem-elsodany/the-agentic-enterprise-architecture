@@ -204,6 +204,4 @@ One question for your chief operating officer: what would one wrong change to a 
 | A step that changes a record is written by people however the agent is built; judge each step, not the product | My position | My AI Agentic Reference Architecture | Not applicable |
 | Agents for conversation and sorting, workflows wherever a record changes | My position | My AI Agentic Reference Architecture | Not applicable |
 
-Last verified: 2026-11-26.
-
 **Next: who holds authority, the model or the services?**
