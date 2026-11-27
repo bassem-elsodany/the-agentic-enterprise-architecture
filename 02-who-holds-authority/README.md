@@ -152,7 +152,7 @@ One question for your head of risk: for each action an assistant may ask for, wh
 ## What no source says
 
 - When a clinician's consent is enough. My default: not for a costly or hard to reverse change. I would add changes with legal weight; no vendor names them.
-- No source I found says a yes typed into the chat does not count, keeps consent apart from approval, or makes an approval work once and expire. Those, the transparency and approval UI and the mail rule are my positions.
+- AWS asks for approval tokens that expire. No source I found says a yes typed into the chat does not count, keeps consent apart from approval, or makes an approval work only once. Those three, the transparency and approval UI and the mail rule are my positions.
 - The vendors ask for a person to approve, rarely a second one. NIST's two-person control is the closest; that the requester may not be one of the two is my reading of it.
 - In my architecture the business process owner names the approvers.
 - AWS says an agent never takes on the user's credentials, and its own last minutes. No source I found says agents should hold none at all, or measures how often a stored note steers a staff assistant.
@@ -171,6 +171,7 @@ One question for your head of risk: for each action an assistant may ask for, wh
 | Assume injection will happen; no single defence is enough | Vendor guidance | Microsoft Learn, Secure Future Initiative, "Defend against indirect prompt injection attacks", https://learn.microsoft.com/en-us/security/zero-trust/sfi/defend-indirect-prompt-injection | 4 Nov 2026 |
 | Every request decided at an enforcement point; access granted per session | Standard | NIST SP 800-207, "Zero Trust Architecture", sections 2 and 3.1 read, https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf | Aug 2020 |
 | Agent and human user permissions kept separate; the system enforces the user's own rights; the agent never takes on the user's credentials, and its own last 15 to 60 minutes | Vendor guidance | AWS Well-Architected Framework, Agentic AI Lens, "Separate agent and human user permission", https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentsec03-bp02.html | No date shown |
+| AWS asks for approval tokens that expire | Vendor blog | AWS Security Blog, "The Agentic AI Security Scoping Matrix: A framework for securing autonomous AI systems", https://aws.amazon.com/blogs/security/the-agentic-ai-security-scoping-matrix-a-framework-for-securing-autonomous-ai-systems/ | 21 Nov 2025 |
 | An app acting for a user cannot exceed that user's rights | Product documentation | Microsoft Learn, "Overview of Microsoft Graph permissions", delegated permissions read, https://learn.microsoft.com/en-us/graph/permissions-overview | 26 Dec 2025 |
 | An approval is tied to one exact call; an 'always approve' decision can be remembered | Product documentation | OpenAI Agents SDK, "Human-in-the-loop", https://openai.github.io/openai-agents-python/human_in_the_loop/ | No date shown |
 | A person can approve and have it remembered | Product documentation | Anthropic, Claude Agent SDK, "Handle approvals and user input", https://code.claude.com/docs/en/agent-sdk/user-input | No date shown |
